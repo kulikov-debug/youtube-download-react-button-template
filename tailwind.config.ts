@@ -9,8 +9,8 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        purple_main: "#6c5ce7",
+        heading_main: "#2D3436"
       },
     },
     fontFamily: {

@@ -1,4 +1,9 @@
 {
+  "header": {},
+  "footer": {
+    "more_links": "More Links",
+    "languages": "Languages"
+  },
   "general": {
     "download": "Download"
   },
@@ -6,6 +11,104 @@
     "hero": {
       "title": "",
       "description": "Get high-quality MP3 downloads at 320kbps with this premium tool. Enjoy the best sound from your favorite content."
+    },
+    "faqs": {
+      "word": "FAQs",
+      "intro": [
+        "loader.fo is one of the most popular downloader tools on the internet.",
+        "With this tool, you can download and convert videos from almost anywhere on the internet, from YouTube, Twitter, and Facebook to OK.ru, TikTok, and everything in between.",
+        "Functionality-wise, it's very straightforward. The user is required to enter the page URL in the 'url' field, choose the format, and click download."
+      ],
+      "youtube-video-downloader": {
+        "word": "Youtube Video Downloader",
+        "heading": "Experience Buffer-Free Entertainment With YouTube Video Downloader",
+        "intro": [
+          "The YouTube Video Downloader promises uninterrupted entertainment and a buffer-free experience for your favorite YouTube content. This user-friendly tool helps you to download videos effortlessly, eliminating the frustration of buffering.",
+          "With a simple interface, the downloader makes video downloads a breeze.",
+          "One of the key features of this tool is its versatility. You get to choose from a variety of quality options to customize your downloads according to your preferences. Users can watch videos in high resolution without worrying about buffering disruptions.",
+          "The YouTube video downloader is the perfect tool for people who are always on the road and do not have proper internet connection. They can simply download a bunch of videos and then watch it as per their convenience and desire."
+        ],
+        "list": [
+          {
+            "question": "Are there any subscription plans, or is it a one-time purchase?",
+            "answer": "No, there are no subscription plans or purchase fees for the YouTube video downloader. This is because it is a free-to-use tool, and you do not need to worry about the pricing."
+          },
+          {
+            "question": "Can the downloader be used without providing personal information?",
+            "answer": "Yes, you can use the YouTube video downloader without sharing your personal information. This is because the downloader does not require you to register yourself to use it."
+          },
+          {
+            "question": "Is there a community forum or knowledge base for self-help?",
+            "answer": "No, there are no community forums or knowledge bases for self-help."
+          }
+        ],
+        "branding": {
+          "title": "loader.fo: Your One-Stop Solution to YouTube Video Downloading",
+          "intro": [
+            "Tired of those annoying buffering pauses ruining your YouTube binge? Well, say hello to uninterrupted entertainment with loader.fo!",
+            "This nifty tool not only lets you download your favorite YouTube videos for free but also helps bid goodbye to those dreaded buffering intervals.",
+            "Imagine a world where your videos load instantly, without any interruptions. That's the magic of loader.fo.",
+            "It's like having a premium pass to buffer-free streaming – just the way entertainment should be. And the best part? It won't cost you a dime.",
+            "Using loader.fo is a breeze. With a user-friendly interface, you'll be downloading videos in no time. No need to be a polymath; loader.fo keeps it simple for everyone.",
+            "Steps to use loader.fo"
+          ],
+          "list": [
+            "Open your web browser and go to loader.fo.",
+            "Now visit YouTube and find the video that you want to download, like a podcast, a music video, a movie, and even a stream.",
+            "Now click on share and copy the link or copy the link from the address bar on the top.",
+            "Paste the copied link on the tool page.",
+            "Now click on the download button.",
+            "Here, you will get the option to choose your desired video quality and resolution.",
+            "Wait for the download to complete; the time varies based on your internet speed.",
+            "Once downloaded, you can enjoy your offline content at your will."
+          ],
+          "subtitle": "loader.fo: FAQs",
+          "questions": [
+            {
+              "question": "Does loader.fo offer a money-back guarantee?",
+              "answer": "You do not need to worry about paying or any money-back guarantee. This is because you can use this tool free of cost to download your favorite YouTube videos."
+            },
+            {
+              "question": "Can I download videos consistently across different internet speeds?",
+              "answer": "Yes, loader.fo can download YouTube videos consistently across varying internet speeds. But if you have a stable internet connection, your download will be faster."
+            },
+            {
+              "question": "How does the downloader ensure the security of downloaded files?",
+              "answer": "loader.fo regularly scans the website for viruses and malware. So do not worry. The downloaded files will not affect your device."
+            }
+          ]
+        }
+      }
+    },
+    "features": {
+      "tag": "Features",
+      "title": "What Makes Us Special",
+      "list": [
+        {
+          "title": "No Download Limit",
+          "description": "You can download all the content you want without limits."
+        },
+        {
+          "title": "Downloads At No Cost",
+          "description": "You can convert Video and Audio content and download it for free here."
+        },
+        {
+          "title": "The Best Speeds",
+          "description": "Our platform converts Audio and Video in seconds."
+        },
+        {
+          "title": "Easy to Use",
+          "description": "You can convert and download content using our tool with a few clicks."
+        },
+        {
+          "title": "No Need For Apps",
+          "description": "Since our tool is online, you can use it without having to install anything on your device."
+        },
+        {
+          "title": "Well Secured",
+          "description": "Our website is very well secured. We have developed this website with user security in mind. So there will be no problem with security"
+        }
+      ]
     }
   }
 }

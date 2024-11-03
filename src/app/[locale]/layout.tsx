@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import "../globals.css";
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import {notFound} from 'next/navigation';
 import {routing} from '@/i18n/routing';
+import { inter_sans } from "../_client/libs/fonts";
 import { Header } from "../_client/components/layout/header";
-import { inter_sans, league_spartan_sans } from "../_client/libs/fonts";
+import { Footer } from "../_client/components/layout/footer";
+
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -31,10 +32,11 @@ const Layout = async({ children, params }: LayoutProps) => {
 
   return (
     <html lang={locale}>
-      <body className={`${ inter_sans } font-inter bg-gray-50`}>
+      <body className={`${ inter_sans } font-inter bg-gray-100`}>
         <NextIntlClientProvider messages={messages}>
           <Header />
           {children}
+          <Footer />
         </NextIntlClientProvider>
       </body>
     </html>
