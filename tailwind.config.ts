@@ -13,6 +13,10 @@ const config: Config = {
         foreground: "var(--foreground)",
       },
     },
+    fontFamily: {
+      league_spartan: ["var(--font-league_spartan_sans)"],
+      inter: ["var(--font-inter)"],
+    },
   },
   plugins: [],
 };

@@ -1,6 +1,11 @@
 {
-  "HomePage": {
-    "title": "Hello world!",
-    "about": "Go to the about page"
+  "general": {
+    "download": "Download"
+  },
+  "homepage": {
+    "hero": {
+      "title": "",
+      "description": "Get high-quality MP3 downloads at 320kbps with this premium tool. Enjoy the best sound from your favorite content."
+    }
   }
 }

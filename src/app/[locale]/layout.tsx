@@ -5,18 +5,8 @@ import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import {notFound} from 'next/navigation';
 import {routing} from '@/i18n/routing';
-
-
-const geistSans = localFont({
-  src: "../fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "../fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+import { Header } from "../_client/components/layout/header";
+import { inter_sans, league_spartan_sans } from "../_client/libs/fonts";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -25,25 +15,25 @@ export const metadata: Metadata = {
 
 type LayoutProps = {
   children: React.ReactNode
-  params: {
+  params: Promise<{
     locale: string
-  }
+  }>
 }
 
-const Layout = async({ children, params: { locale } }: LayoutProps) => {
-  // Ensure that the incoming `locale` is valid
+const Layout = async({ children, params }: LayoutProps) => {
+  const { locale } = await params
+
   if (!routing.locales.includes(locale as any)) {
     notFound();
   }
  
-  // Providing all messages to the client
-  // side is the easiest way to get started
   const messages = await getMessages();
 
   return (
     <html lang={locale}>
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body className={`${ inter_sans } font-inter bg-gray-50`}>
         <NextIntlClientProvider messages={messages}>
+          <Header />
           {children}
         </NextIntlClientProvider>
       </body>
