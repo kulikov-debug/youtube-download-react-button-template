@@ -5,24 +5,26 @@
     "languages": "Languages"
   },
   "general": {
-    "download": "Download"
+    "download": "Download",
+    "audio": "Audio",
+    "video": "Video"
   },
   "homepage": {
-    "hero": {
-      "title": "",
-      "description": "Get high-quality MP3 downloads at 320kbps with this premium tool. Enjoy the best sound from your favorite content."
-    },
-    "faqs": {
-      "word": "FAQs",
-      "intro": [
-        "loader.fo is one of the most popular downloader tools on the internet.",
-        "With this tool, you can download and convert videos from almost anywhere on the internet, from YouTube, Twitter, and Facebook to OK.ru, TikTok, and everything in between.",
-        "Functionality-wise, it's very straightforward. The user is required to enter the page URL in the 'url' field, choose the format, and click download."
-      ],
-      "youtube-video-downloader": {
-        "word": "Youtube Video Downloader",
+    "yvd": {
+      "fullname": "Youtube Video Downloader",
+      "hero": {
+        "title": "YouTube Video Downloader",
+        "description": "Get high-quality MP3 downloads at 320kbps with this premium tool. Enjoy the best sound from your favorite content."
+      },
+      "faqs": {
+        "word": "FAQs",
+        "intro1": [
+          "loader.fo is one of the most popular downloader tools on the internet.",
+          "With this tool, you can download and convert videos from almost anywhere on the internet, from YouTube, Twitter, and Facebook to OK.ru, TikTok, and everything in between.",
+          "Functionality-wise, it's very straightforward. The user is required to enter the page URL in the 'url' field, choose the format, and click download."
+        ],
         "heading": "Experience Buffer-Free Entertainment With YouTube Video Downloader",
-        "intro": [
+        "intro2": [
           "The YouTube Video Downloader promises uninterrupted entertainment and a buffer-free experience for your favorite YouTube content. This user-friendly tool helps you to download videos effortlessly, eliminating the frustration of buffering.",
           "With a simple interface, the downloader makes video downloads a breeze.",
           "One of the key features of this tool is its versatility. You get to choose from a variety of quality options to customize your downloads according to your preferences. Users can watch videos in high resolution without worrying about buffering disruptions.",
@@ -78,37 +80,37 @@
             }
           ]
         }
+      },
+      "features": {
+        "tag": "Features",
+        "title": "What Makes Us Special",
+        "list": [
+          {
+            "title": "No Download Limit",
+            "description": "You can download all the content you want without limits."
+          },
+          {
+            "title": "Downloads At No Cost",
+            "description": "You can convert Video and Audio content and download it for free here."
+          },
+          {
+            "title": "The Best Speeds",
+            "description": "Our platform converts Audio and Video in seconds."
+          },
+          {
+            "title": "Easy to Use",
+            "description": "You can convert and download content using our tool with a few clicks."
+          },
+          {
+            "title": "No Need For Apps",
+            "description": "Since our tool is online, you can use it without having to install anything on your device."
+          },
+          {
+            "title": "Well Secured",
+            "description": "Our website is very well secured. We have developed this website with user security in mind. So there will be no problem with security"
+          }
+        ]
       }
-    },
-    "features": {
-      "tag": "Features",
-      "title": "What Makes Us Special",
-      "list": [
-        {
-          "title": "No Download Limit",
-          "description": "You can download all the content you want without limits."
-        },
-        {
-          "title": "Downloads At No Cost",
-          "description": "You can convert Video and Audio content and download it for free here."
-        },
-        {
-          "title": "The Best Speeds",
-          "description": "Our platform converts Audio and Video in seconds."
-        },
-        {
-          "title": "Easy to Use",
-          "description": "You can convert and download content using our tool with a few clicks."
-        },
-        {
-          "title": "No Need For Apps",
-          "description": "Since our tool is online, you can use it without having to install anything on your device."
-        },
-        {
-          "title": "Well Secured",
-          "description": "Our website is very well secured. We have developed this website with user security in mind. So there will be no problem with security"
-        }
-      ]
     }
   }
 }

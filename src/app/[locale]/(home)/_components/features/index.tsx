@@ -3,7 +3,7 @@ import { useTranslations } from "next-intl"
 
 
 export const HomeFeatures = () =>{
-  const translate = useTranslations("homepage.features")
+  const translate = useTranslations("homepage.yvd.features")
 
   const renderFeatures = () =>{
     const mappedFeatures = Array(6)
