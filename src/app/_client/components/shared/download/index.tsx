@@ -12,7 +12,7 @@ type Selection = {
   value: string
 }
 
-export const HomeDownload = () =>{
+export const Download = () =>{
   const translate = useTranslations("general")
   const { isExpanded, handleExpansion } = useExpansion()
   const [ selectedFormat, setSelectedFormat ] = useState({

@@ -111,6 +111,107 @@
           }
         ]
       }
+    },
+    "4kd": {
+      "fullname": "4K Video Downloader",
+      "hero": {
+        "title": "4K Video Downloader",
+        "description": "Embrace the ultimate tool for seamless 4K movie downloads. It is undoubtedly the cinephile's best companion."
+      },
+      "faqs": {
+        "word": "FAQs",
+        "intro1": [
+          "loader.fo is one of the most popular downloader tools on the internet.",
+          "With this tool, you can download and convert videos from almost anywhere on the internet, from YouTube, Twitter, and Facebook to OK.ru, TikTok, and everything in between.",
+          "Functionality-wise, it's very straightforward. The user is required to enter the page URL in the 'url' field, choose the format, and click download."
+        ],
+        "heading": "4K Video Downloader: The Downloader That Does It All!",
+        "intro2": [
+          "In the world of videos, 4K videos are considered the gold standard in terms of clarity and detail. A 4K video, also known as Ultra High Definition (UHD), has a resolution of 3840 x 2160 pixels, providing viewers with an incredibly sharp and immersive experience worth more than 8.3 million pixels.",
+          "People love watching 4K videos because they deliver a level of detail that feels real, making everything from scenic landscapes to close-up shots super-vivid and engaging.",
+          "However, not everyone can enjoy 4K videos. This is because most popular streaming services offer 4K content, but they come with a price tag. But don't worry, we have come up with the solution.",
+          "Enter the 4K Video Downloader – a game-changer for enthusiasts who want to break free from subscription constraints. This tool allows users to download their favorite 4K videos from multiple platforms free of charge.",
+          "Its user-friendly interface makes the downloading process pretty simple. This ensures that everyone, regardless of technical know-how, can create their personal collection of high-quality videos.",
+          "Another big advantage of using this downloader is that you can save your favorite videos in multiple formats too."
+        ],
+        "list": [
+          {
+            "question": "Can 4K Video Downloader be used on both Windows and Mac operating systems?",
+            "answer": "Yes, you can use the 4K Video Downloader on both Windows and Mac operating systems. It is a versatile tool and can also be used on mobile devices and tablets."
+          },
+          {
+            "question": "Is the tool compatible with popular video streaming platforms like YouTube, Vimeo, etc?",
+            "answer": "Yes, the 4K video downloader can be used to download your favorite videos from popular video streaming platforms like YouTube, Vimeo, etc."
+          },
+          {
+            "question": "Are there any limitations on the number of downloads or simultaneous downloads?",
+            "answer": "No, there are no limitations on the number of downloads or simultaneous downloads you can do using the tool. This is because it is a free tool and can be used multiple times to download unlimited videos."
+          }
+        ],
+        "branding": {
+          "title": "loader.fo: Journey into 4K with This Downloader",
+          "intro": [
+            "You might have stumbled upon those breathtaking video clips on streaming platforms but haven't been able to watch them due to a hefty subscription fee.",
+            "But fear not! Enter loader.fo, your gateway to 4K bliss without spending a dime. This downloader is your ticket to grab those stunning videos from your favorite platforms swiftly.",
+            "Now, let's dive into the features that make loader.fo your go-to 4K companion. First off, it's as easy to use; you do not need to be a tech genius for it.",
+            "Want options? This tool supports various formats, giving you the freedom to choose what suits you best.",
+            "Steps to use loader.fo"
+          ],
+          "list": [
+            "Open your browser and go to the loader.fo website.",
+            "Locate the video on the streaming platform from where you want to download it and copy its URL.",
+            "Head back to the downloader and insert the copied URL.",
+            "Choose the desired video quality and format options.",
+            "Initiate the download by clicking the dedicated button.",
+            "Locate the downloaded video file and start enjoying your offline content."
+          ],
+          "subtitle": "loader.fo: FAQs",
+          "questions": [
+            {
+              "question": "Is there a limit on the number of devices loader.fo can be installed on?",
+              "answer": "You can use loader.fo on any number of devices because this is a web-based tool. All you need is a stable internet connection and a working browser."
+            },
+            {
+              "question": "Does loader.fo offer ad-free service?",
+              "answer": "Yes, loader.fo offers ad-free service. This simply means that you will not be annoyed with those irritating ads while you are trying to download a video."
+            },
+            {
+              "question": "Does loader.fo offer integration with cloud storage services?",
+              "answer": "Unfortunately, the tool does not offer integration with cloud storage services. To upload it to the cloud, first, you have to download the video using the tool, and then you can upload it to the cloud from your device."
+            }
+          ]
+        }
+      },
+      "features": {
+        "tag": "Features",
+        "title": "What Makes Us Special",
+        "list": [
+          {
+            "title": "No Download Limit",
+            "description": "You can download all the content you want without limits."
+          },
+          {
+            "title": "Downloads At No Cost",
+            "description": "You can convert Video and Audio content and download it for free here."
+          },
+          {
+            "title": "The Best Speeds",
+            "description": "Our platform converts Audio and Video in seconds."
+          },
+          {
+            "title": "Easy to Use",
+            "description": "You can convert and download content using our tool with a few clicks."
+          },
+          {
+            "title": "No Need For Apps",
+            "description": "Since our tool is online, you can use it without having to install anything on your device."
+          },
+          {
+            "title": "Well Secured",
+            "description": "Our website is very well secured. We have developed this website with user security in mind. So there will be no problem with security"
+          }
+        ]
+      }
     }
   }
 }

@@ -2,8 +2,12 @@ import { FeatureVector } from "@/app/_client/components/svgs/vectors/feature"
 import { useTranslations } from "next-intl"
 
 
-export const HomeFeatures = () =>{
-  const translate = useTranslations("homepage.yvd.features")
+type FeaturesProps = {
+  vda: string
+}
+
+export const Features = ({ vda }: FeaturesProps) =>{
+  const translate = useTranslations(`homepage.${ vda }.features`)
 
   const renderFeatures = () =>{
     const mappedFeatures = Array(6)

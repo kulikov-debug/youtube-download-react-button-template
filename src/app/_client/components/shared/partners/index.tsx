@@ -43,7 +43,7 @@ const partners = [
   },
 ]
 
-export const HomePartners = () =>{
+export const Partners = () =>{
 
   const renderPartners = () =>{
     const mappedPartners = partners.map(partner => (

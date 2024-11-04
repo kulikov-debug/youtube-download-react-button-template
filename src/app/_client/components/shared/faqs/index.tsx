@@ -1,9 +1,66 @@
 import { useTranslations } from "next-intl"
 
 
-export const HomeFaqs = () =>{
-  const yvdTranslate = useTranslations("homepage.yvd")
-  const faqsTranslate = useTranslations("homepage.yvd.faqs")
+type HeroProps = {
+  vda: string
+}
+
+const vdaLimits = (vda: string) =>{
+  switch(vda) {
+    case "yvd":
+      return {
+        intro2: 4,
+        brandingIntro: 6,
+        brandingList: 8
+      }
+    case "4kd":
+      return {
+        intro2: 6,
+        brandingIntro: 5,
+        brandingList: 6
+      }
+  }
+}
+
+export const FAQs = ({ vda }: HeroProps) =>{
+  const yvdTranslate = useTranslations(`homepage.${ vda }`)
+  const faqsTranslate = useTranslations(`homepage.${ vda }.faqs`)
+
+  const renderIntro2 = () =>{
+    const mappedIntro2 = Array(vdaLimits(vda)?.intro2)
+      .fill("")
+      .map((intro, index) => (
+        <p
+          key={`intro2-${index}`} 
+          className="mb-1">{ faqsTranslate(`intro2.${index}`) }</p>
+      ))
+
+    return mappedIntro2
+  }
+
+  const brandingIntro = () =>{
+    const mappedIntro = Array(vdaLimits(vda)?.brandingIntro)
+      .fill("")
+      .map((intro, index) => (
+        <p
+          key={`branding-intro-${index}`} 
+          className="mb-1">{ faqsTranslate(`branding.intro.${index}`) }</p>
+      ))
+
+    return mappedIntro
+  }
+  
+  const brandingList = () =>{
+    const mappedList = Array(vdaLimits(vda)?.brandingList)
+      .fill("")
+      .map((intro, index) => (
+        <li
+          key={`branding-list-${index}`} 
+          className="mb-1">{ faqsTranslate(`branding.list.${index}`) }</li>
+      ))
+
+    return mappedList
+  }
 
   return (
     <div className="bg-white mb-20 rounded-3xl py-7 lg:py-20 px-4 lg:px-24 shadow-md">
@@ -14,10 +71,7 @@ export const HomeFaqs = () =>{
       </div>
       <h2 className="font-bold text-heading_main">{ faqsTranslate("heading") }</h2>
       <div className="font-light text-[15px] leading-normal text-gray-600 mb-6">
-        <p className="mb-1">{ faqsTranslate("intro2.0") }</p>
-        <p className="mb-1">{ faqsTranslate("intro2.1") }</p>
-        <p className="mb-1">{ faqsTranslate("intro2.2") }</p>
-        <p className="mb-1">{ faqsTranslate("intro2.3") }</p>
+        { renderIntro2() }
       </div>
 
       <h3 className="font-bold text-heading_main text-xl mb-6">{yvdTranslate("fullname")}: { faqsTranslate("word") }</h3>
@@ -32,24 +86,12 @@ export const HomeFaqs = () =>{
 
       <h3 className="font-bold text-heading_main text-xl mb-6">{faqsTranslate("branding.title")}</h3>
       <div className="font-light text-[15px] leading-normal text-gray-600 mb-6">
-        <p className="mb-1">{ faqsTranslate("branding.intro.0") }</p>
-        <p className="mb-1">{ faqsTranslate("branding.intro.1") }</p>
-        <p className="mb-1">{ faqsTranslate("branding.intro.2") }</p>
-        <p className="mb-1">{ faqsTranslate("branding.intro.3") }</p>
-        <p className="mb-1">{ faqsTranslate("branding.intro.4") }</p>
-        <p className="mb-1">{ faqsTranslate("branding.intro.5") }</p>
+        { brandingIntro() }
       </div>
 
       <div className="font-light text-[15px] leading-normal text-gray-600 mb-6">
         <ul className="list-disc pl-4">
-          <li className="mb-1">{ faqsTranslate("branding.list.0") }</li>
-          <li className="mb-1">{ faqsTranslate("branding.list.1") }</li>
-          <li className="mb-1">{ faqsTranslate("branding.list.2") }</li>
-          <li className="mb-1">{ faqsTranslate("branding.list.3") }</li>
-          <li className="mb-1">{ faqsTranslate("branding.list.4") }</li>
-          <li className="mb-1">{ faqsTranslate("branding.list.5") }</li>
-          <li className="mb-1">{ faqsTranslate("branding.list.6") }</li>
-          <li className="mb-1">{ faqsTranslate("branding.list.5") }</li>
+          { brandingList() }
         </ul>
       </div>
 
