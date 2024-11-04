@@ -13,7 +13,7 @@ const mapper: Mapper = {
   "4k-video-downloader": "4kd",
   "youtube-to-mp3": "ytmp3",
   "youtube-playlist-downloader": "ypd",
-  "youtube-to-": "ytwav",
+  "youtube-to-wav": "ytwav",
   "youtube-1080p-downloader": "y1080d",
 }
 

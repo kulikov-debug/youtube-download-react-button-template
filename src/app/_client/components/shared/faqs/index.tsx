@@ -19,6 +19,30 @@ const vdaLimits = (vda: string) =>{
         brandingIntro: 5,
         brandingList: 6
       }
+    case "ytmp3":
+      return {
+        intro2: 5,
+        brandingIntro: 5,
+        brandingList: 7
+      }
+    case "ypd":
+      return {
+        intro2: 7,
+        brandingIntro: 5,
+        brandingList: 7
+      }
+    case "ytwav":
+      return {
+        intro2: 5,
+        brandingIntro: 4,
+        brandingList: 5
+      }
+    case "y1080d":
+      return {
+        intro2: 6,
+        brandingIntro: 5,
+        brandingList: 7
+      }
   }
 }
 
@@ -64,32 +88,32 @@ export const FAQs = ({ vda }: HeroProps) =>{
 
   return (
     <div className="bg-white mb-20 rounded-3xl py-7 lg:py-20 px-4 lg:px-24 shadow-md">
-      <div className="font-light text-[15px] leading-normal text-gray-600 mb-4">
+      <div className="font-light text-sm leading-normal text-gray-600 mb-4">
         <p className="mb-1">{ faqsTranslate("intro1.0") }</p>
         <p className="mb-1">{ faqsTranslate("intro1.1") }</p>
         <p className="">{ faqsTranslate("intro1.2") }</p>
       </div>
       <h2 className="font-bold text-heading_main">{ faqsTranslate("heading") }</h2>
-      <div className="font-light text-[15px] leading-normal text-gray-600 mb-6">
+      <div className="font-light text-sm leading-normal text-gray-600 mb-6">
         { renderIntro2() }
       </div>
 
       <h3 className="font-bold text-heading_main text-xl mb-6">{yvdTranslate("fullname")}: { faqsTranslate("word") }</h3>
       <div className="mb-6">
         <h3 className="font-bold text-heading_main">{ faqsTranslate("list.0.question") }</h3>
-        <p className="font-light text-[15px] leading-normal text-gray-600 mb-4">{ faqsTranslate("list.0.answer") }</p>
+        <p className="font-light text-sm leading-normal text-gray-600 mb-4">{ faqsTranslate("list.0.answer") }</p>
         <h3 className="font-bold text-heading_main">{ faqsTranslate("list.1.question") }</h3>
-        <p className="font-light text-[15px] leading-normal text-gray-600 mb-4">{ faqsTranslate("list.1.answer") }</p>
+        <p className="font-light text-sm leading-normal text-gray-600 mb-4">{ faqsTranslate("list.1.answer") }</p>
         <h3 className="font-bold text-heading_main">{ faqsTranslate("list.2.question") }</h3>
-        <p className="font-light text-[15px] leading-normal text-gray-600">{ faqsTranslate("list.2.answer") }</p>
+        <p className="font-light text-sm leading-normal text-gray-600">{ faqsTranslate("list.2.answer") }</p>
       </div>
 
       <h3 className="font-bold text-heading_main text-xl mb-6">{faqsTranslate("branding.title")}</h3>
-      <div className="font-light text-[15px] leading-normal text-gray-600 mb-6">
+      <div className="font-light text-sm leading-normal text-gray-600 mb-6">
         { brandingIntro() }
       </div>
 
-      <div className="font-light text-[15px] leading-normal text-gray-600 mb-6">
+      <div className="font-light text-sm leading-normal text-gray-600 mb-6">
         <ul className="list-disc pl-4">
           { brandingList() }
         </ul>
@@ -98,11 +122,11 @@ export const FAQs = ({ vda }: HeroProps) =>{
       <h3 className="font-bold text-heading_main text-xl mb-6">{faqsTranslate("branding.subtitle")}</h3>
       <div>
         <h3 className="font-bold text-heading_main">{ faqsTranslate("branding.questions.0.question") }</h3>
-        <p className="font-light text-[15px] leading-normal text-gray-600 mb-4">{ faqsTranslate("branding.questions.0.answer") }</p>
+        <p className="font-light text-sm leading-normal text-gray-600 mb-4">{ faqsTranslate("branding.questions.0.answer") }</p>
         <h3 className="font-bold text-heading_main">{ faqsTranslate("branding.questions.1.question") }</h3>
-        <p className="font-light text-[15px] leading-normal text-gray-600 mb-4">{ faqsTranslate("branding.questions.1.answer") }</p>
+        <p className="font-light text-sm leading-normal text-gray-600 mb-4">{ faqsTranslate("branding.questions.1.answer") }</p>
         <h3 className="font-bold text-heading_main">{ faqsTranslate("branding.questions.2.question") }</h3>
-        <p className="font-light text-[15px] leading-normal text-gray-600">{ faqsTranslate("branding.questions.2.answer") }</p>
+        <p className="font-light text-sm leading-normal text-gray-600">{ faqsTranslate("branding.questions.2.answer") }</p>
       </div>
     </div>
   )
