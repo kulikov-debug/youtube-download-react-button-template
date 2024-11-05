@@ -7,6 +7,8 @@ import {routing} from '@/i18n/routing';
 import { inter_sans } from "../_client/libs/fonts";
 import { Header } from "../_client/components/layout/header";
 import { Footer } from "../_client/components/layout/footer";
+import { ToastContainer } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 
 export const metadata: Metadata = {
@@ -35,7 +37,8 @@ const Layout = async({ children, params }: LayoutProps) => {
       <body className={`${ inter_sans } font-inter bg-gray-100`}>
         <NextIntlClientProvider messages={messages}>
           <Header />
-          {children}
+            {children}
+            <ToastContainer autoClose={3000} />
           <Footer />
         </NextIntlClientProvider>
       </body>

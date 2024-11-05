@@ -11,7 +11,7 @@ export const audios = [
   },
   {
     label: "WEBM",
-    value: "webm"
+    value: "webm_audio"
   },
   {
     label: "AAC",
@@ -38,26 +38,26 @@ export const audios = [
 export const videos = [
   {
     label: "MP4 (360p)",
-    value: "mp4_360"
+    value: "360"
   },
   {
     label: "MP4 (480p)",
-    value: "mp4_480"
+    value: "480"
   },
   {
     label: "MP4 (720p)",
-    value: "mp4_720"
+    value: "720"
   },
   {
     label: "MP4 (1080p)",
-    value: "mp4_1080"
+    value: "1080"
   },
   {
     label: "MP4 (1440p)",
-    value: "mp4_1440"
+    value: "4k"
   },
   {
     label: "WEBM (4k)",
-    value: "webm_4k"
+    value: "8k"
   }
 ]
