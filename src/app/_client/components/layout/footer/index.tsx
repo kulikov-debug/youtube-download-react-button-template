@@ -47,17 +47,17 @@ export const Footer = () =>{
   }
 
   return (
-    <footer className="bg-white px-5 pt-20 pb-8 lg:flex lg:items-start lg:gap-x-10">
-      <div className="pb-8 border-b-2 border-b-gray-200 mb-8 lg:border-none">
+    <footer className="bg-white dark:bg-dark_heading px-5 pt-32 pb-8 lg:flex lg:flex-wrap lg:items-start lg:gap-x-14">
+      <div className="pb-8 border-b-2 border-b-gray-200 dark:border-b-gray-800 mb-8 lg:border-none">
         <Link
-          className="block max-w-max mx-auto text-violet-600 font-bold text-[42px] lg:leading-normal" 
+          className="block max-w-max mx-auto text-purple_main font-bold text-[42px] lg:leading-normal" 
           href="/">
           VDA
         </Link>
       </div>
       <div className="text-center lg:text-left">
-        <h3 className="text-xl font-bold text-heading_main mb-4">{ translate("more_links") }</h3>
-        <ul className="text-gray-500 lg:grid lg:grid-cols-2 lg:gap-x-6">
+        <h3 className="text-xl font-bold text-heading_main dark:text-white mb-4">{ translate("more_links") }</h3>
+        <ul className="text-gray-500 dark:text-gray-400 lg:grid lg:grid-cols-2 lg:gap-x-10">
           { renderLinks() }
           <li
             className="text-[15px] font-light mb-8">
@@ -66,6 +66,16 @@ export const Footer = () =>{
             </Link>
           </li>
         </ul>
+      </div>
+      <div className="text-center lg:text-left">
+        <h3 className="text-xl font-bold text-heading_main dark:text-white mb-4">{ translate("languages") }</h3>
+        <ul className="text-gray-500 dark:text-gray-400 lg:grid lg:grid-cols-2 lg:gap-x-10">
+        </ul>
+      </div>
+      <div className="lg:basis-full p-4">
+        <div className="border-t-2 pt-16 border-t-gray-200 dark:border-t-gray-800">
+          <p className="font-light text-sm text-gray-500 dark:text-gray-300">Copyright © 2022 All Rights Reseved.</p>
+        </div>
       </div>
     </footer>
   )

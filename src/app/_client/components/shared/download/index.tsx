@@ -143,10 +143,10 @@ export const Download = () =>{
 
   return (
     <>
-      <div className="lg:flex lg:bg-white lg:items-center lg:shadow-md lg:rounded-3xl lg:py-4 lg:pr-4 mb-20">
+      <div className="lg:flex lg:bg-white lg:dark:bg-dark_heading lg:items-center lg:shadow-md lg:rounded-3xl lg:py-4 lg:pr-4 mb-20">
         <div className="mb-4 lg:mb-0 lg:w-full">
           <input
-            className="font-light px-6 h-16 rounded-3xl bg-white shadow-md lg:shadow-none w-full block outline-none"
+            className="font-light px-6 h-16 rounded-3xl bg-white dark:bg-dark_heading shadow-md lg:shadow-none w-full block outline-none"
             placeholder="Paste your url"
             value={youtubeUrl}
             onChange={(event) => setYoutubeUrl(event.target.value)} />

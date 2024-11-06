@@ -9,6 +9,9 @@ html {
 
 body {
   
+  &.no-scroll {
+    overflow: hidden;
+  }
 }
 
 @layer components {

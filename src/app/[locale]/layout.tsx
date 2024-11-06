@@ -39,8 +39,8 @@ const Layout = async({ children, params }: LayoutProps) => {
           <ThemeProvider attribute="class">
             <NextIntlClientProvider messages={messages}>
               <Header />
-                {children}
-                <ToastContainer autoClose={3000} />
+              {children}
+              <ToastContainer autoClose={3000} />
               <Footer />
             </NextIntlClientProvider>
           </ThemeProvider>
