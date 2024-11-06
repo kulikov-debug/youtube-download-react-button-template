@@ -121,16 +121,16 @@ export const Download = () =>{
         </div>
         <div className="lg:basis-1/2">
           <div className="flex mb-4 lg:mb-2 items-center font-light text-purple_main capitalize text-sm gap-x-4">
-            <p className="border border-purple_main rounded-full py-3 px-5">{ downloadable.format.type }</p>
-            <p className="border border-purple_main rounded-full py-3 px-5">{ downloadable.format.label }</p>
+            <p className="border border-purple_main rounded-full py-3 px-5 hover:bg-purple_main hover:text-white">{ downloadable.format.type }</p>
+            <p className="border border-purple_main rounded-full py-3 px-5 hover:bg-purple_main hover:text-white">{ downloadable.format.label }</p>
           </div>
           <h4 className="text-heading_main font-bold text-xl lg:text-3xl">{ downloadable.youtube.title }</h4>
-          <div className="mb-2">
+          <div className="mb-3">
             <a 
               href={ downloadable.url }
               className="text-sm">
               <span className="text-purple_main font-medium">URL: </span>
-              <span className="text-gray-700">{ downloadable.url }</span>
+              <span className="text-gray-700 break word-break-word">{ downloadable.url }</span>
             </a>
           </div>
           <iframe style={{width: "100%", border: "none", maxWidth: "564px", height: "60px", overflow: "hidden"}} src={`https://loader.to/api/button2/?url=${ downloadable.url }&f=${ downloadable.format.value }`}></iframe>
@@ -191,7 +191,7 @@ export const Download = () =>{
         <div 
           ref={scrollRef} 
           className="lg:px-20 mb-8">
-          <div className="bg-white rounded-2xl py-6 lg:py-16 px-5 lg:px-20">
+          <div className="bg-white rounded-2xl py-6 lg:py-16 px-5 lg:px-16">
             { renderDownloadables() }
           </div>
         </div>

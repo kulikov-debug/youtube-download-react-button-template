@@ -32,4 +32,8 @@ body {
       }
     }
   }
+
+  .word-break-word {
+    word-break: break-word;
+  }
 }
