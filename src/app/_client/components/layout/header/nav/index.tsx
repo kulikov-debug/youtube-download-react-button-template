@@ -50,7 +50,7 @@ export const HeaderNav = ({ onClose }: HeaderNavProps) =>{
   }
 
   return (
-    <nav className="min-h-screen w-screen bg-white p-4 lg:min-h-min lg:w-auto lg:p-0">
+    <nav className="w-screen bg-white dark:bg-dark_body p-4 lg:min-h-min lg:w-auto lg:p-0">
       <button
         className="block ml-auto lg:hidden" 
         onClick={ onClose? onClose : () =>{} }>
@@ -58,7 +58,7 @@ export const HeaderNav = ({ onClose }: HeaderNavProps) =>{
           <CloseIcon />
         </div>
       </button>
-      <ul className="font-light pt-2 text-center lg:flex lg:items-center lg:font-medium lg:gap-x-6">
+      <ul className="font-light pt-2 text-center lg:flex lg:items-center lg:font-medium lg:gap-x-6 border-b-2 lg:border-none pb-8 lg:pb-0 mb-10 lg:mb-0 border-b-gray-200 dark:border-b-gray-800">
         { renderLinks() }
         <li
           className="mb-8 lg:hidden">

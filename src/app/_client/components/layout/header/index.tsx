@@ -5,14 +5,17 @@ import { useState } from "react"
 import { AnimatePresence } from "framer-motion"
 import { HeaderNav } from "./nav"
 import { motion } from "framer-motion"
+import { Theming } from './theme';
+import { useBetterMediaQuery } from '@/app/_client/libs/hooks/useBetterMediaQuery';
 
 
 export const Header = () =>{
   const [ isExpanded, setIsExpanded ] = useState(false)
-
+  const matches = useBetterMediaQuery('(min-width: 1024px)')
+  
   return (
-    <header className="sticky top-0 z-20 lg:pt-9 lg:px-5 lg:bg-gray-100">
-      <div className="bg-white p-5 shadow-sm flex justify-between items-center lg:rounded-3xl lg:px-10">
+    <header className="sticky top-0 z-20 lg:pt-9 lg:px-5 lg:bg-gray-100 dark:bg-dark_body">
+      <div className="bg-white dark:bg-dark_heading p-5 shadow-sm flex justify-between items-center lg:rounded-3xl lg:px-10">
         <Link
           className="text-violet-600 font-bold text-base lg:text-[42px] lg:leading-normal" 
           href="/">
@@ -29,7 +32,7 @@ export const Header = () =>{
         <AnimatePresence>
           { isExpanded && (
             <motion.div
-              className="fixed top-0 left-0 min-h-screen w-screen"
+              className="bg-white dark:bg-dark_body lg:hidden fixed top-0 left-0 min-h-screen w-screen"
               initial={{ 
                 opacity: 0,
                 x: 100
@@ -40,12 +43,18 @@ export const Header = () =>{
               }}
               exit={{opacity: 0}}>
               <HeaderNav onClose={() => setIsExpanded(false)} />
+              <div className="max-w-max mx-auto">
+                <Theming />
+              </div>
             </motion.div>
           ) }
         </AnimatePresence>
-        <div className="hidden lg:block">
-          <HeaderNav />
-        </div>
+        { matches && (
+          <div className='flex items-center'>
+            <HeaderNav />
+            <Theming />
+          </div>
+        ) }
       </div>
     </header>
   )

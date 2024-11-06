@@ -9,6 +9,7 @@ import { Header } from "../_client/components/layout/header";
 import { Footer } from "../_client/components/layout/footer";
 import { ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
+import { ThemeProvider } from "next-themes";
 
 
 export const metadata: Metadata = {
@@ -33,16 +34,18 @@ const Layout = async({ children, params }: LayoutProps) => {
   const messages = await getMessages();
 
   return (
-    <html lang={locale}>
-      <body className={`${ inter_sans } font-inter bg-gray-100`}>
-        <NextIntlClientProvider messages={messages}>
-          <Header />
-            {children}
-            <ToastContainer autoClose={3000} />
-          <Footer />
-        </NextIntlClientProvider>
-      </body>
-    </html>
+      <html suppressHydrationWarning lang={locale}>
+        <body className={`${ inter_sans } font-inter bg-gray-100 dark:bg-dark_body`}>
+          <ThemeProvider attribute="class">
+            <NextIntlClientProvider messages={messages}>
+              <Header />
+                {children}
+                <ToastContainer autoClose={3000} />
+              <Footer />
+            </NextIntlClientProvider>
+          </ThemeProvider>
+        </body>
+      </html>
   );
 }
 

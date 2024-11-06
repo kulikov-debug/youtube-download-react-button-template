@@ -10,3 +10,23 @@ html {
 body {
   
 }
+
+@layer components {
+  
+  .theming {
+
+    #dark:checked {
+
+      +label {
+        transform: translate(42px, -50%);
+      }
+
+      ~#light {
+
+        +label {
+          z-index: 20;
+        }
+      }
+    }
+  }
+}
