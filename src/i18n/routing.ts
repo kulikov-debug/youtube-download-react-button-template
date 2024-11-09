@@ -6,9 +6,9 @@ export const routing = defineRouting({
   locales: [
     'en', 'de', 'pl', 'fr', 'es', 'el', 'lv', 'lt', 'nl', 'zh', 'it', 'sv', 'sk',
     'pt', 'sl', 'ru', 'da', 'fi', 'bg', 'cs', 
-    // 'et', 'hu', 'ro', 'ja', 'ko', 'id',
-    // 'ab', 'aa', 'af', 'sq', 'ar', 'hy', 'az', 'bs', 'tl', 'hi', 'ka', 'hr', 'sr',
-    // 'th', 'vi'
+  // 'et', 'hu', 'ro', 'ja', 'ko', 'id',
+  // 'ab', 'aa', 'af', 'sq', 'ar', 'hy', 'az', 'bs', 'tl', 'hi', 'ka', 'hr', 'sr',
+  // 'th', 'vi'
   ],
  
   // Used when no locale matches
