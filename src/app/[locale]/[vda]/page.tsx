@@ -23,7 +23,7 @@ type Mapper = {
  
 const Page = async({ params }: PageProps) => {
   const vda = (await params).vda
-
+ 
   return (
     <main className='px-5 lg:px-0'>
       <Hero vda={ mapper[vda] } />
