@@ -6,6 +6,7 @@ import { useTranslations } from "next-intl"
 import { useRef, useState } from "react"
 import { audios, videos } from "./data"
 import { toast } from "react-toastify"
+import { ADS_URL } from "@/app/_client/configs"
 
 
 type Selection = {
@@ -133,7 +134,7 @@ export const Download = () =>{
               <span className="text-gray-700 break word-break-word">{ downloadable.url }</span>
             </a>
           </div>
-          <iframe style={{width: "100%", border: "none", maxWidth: "564px", height: "60px", overflow: "hidden"}} src={`https://loader.to/api/button2/?url=${ downloadable.url }&f=${ downloadable.format.value }`}></iframe>
+          <iframe style={{width: "100%", border: "none", maxWidth: "564px", height: "60px", overflow: "hidden"}} src={`https://loader.to/api/button2/?url=${ downloadable.url }&f=${ downloadable.format.value }${ ADS_URL? `&adUrl=${ ADS_URL }`: "" }`}></iframe>
         </div>
       </div>
     ))

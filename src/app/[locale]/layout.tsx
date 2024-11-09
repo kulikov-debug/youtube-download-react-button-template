@@ -35,7 +35,7 @@ const Layout = async({ children, params }: LayoutProps) => {
 
   return (
       <html suppressHydrationWarning lang={locale}>
-        <body className={`${ inter_sans } font-inter bg-gray-100 dark:bg-dark_body`}>
+        <body className={`${ inter_sans } font-inter bg-body dark:bg-dark_body`}>
           <ThemeProvider attribute="class">
             <NextIntlClientProvider messages={messages}>
               <Header />
